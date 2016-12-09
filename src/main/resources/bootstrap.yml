@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: admin-dashboard
+  cloud:
+    config:
+      uri: http://config:8888
+  boot:
+    admin:
+      turbine:
+        clusters: default
+        url: http://turbine:8989/turbine.stream
